@@ -1,0 +1,24 @@
+<div class="container">
+
+  <div class="well">
+
+   <%= link_to "Add Roles", new_role_path ,data: {toggle: "modal", id: "addRole",target: "#addRole"} ,:remote => true,class: "btn btn-primary addRole" %>
+   <%= link_to "Hide Roles", roles_list_path ,data: {toggle: "modal", id: "manageRole",target: "#manageRole"} ,:remote => true,class: "btn btn-primary manageRole" %>
+  <%= button_tag "User Management" ,class: "btn btn-primary"%>
+  </div>
+</div>
+
+<div class="modal fade" id="addRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+</div>
+
+<div class="modal fade" id="manageRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+</div>
+
+<!--<div class="container">-->
+
+  <!--<div class="well active_roles">-->
+    <!--<%#= render "active_roles"%>-->
+  <!--</div>-->
+<!--</div>-->

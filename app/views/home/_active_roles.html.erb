@@ -1,0 +1,18 @@
+<table class="table table-hover users-table" id="all_request_table">
+  <thead>
+  <tr>
+    <th class="logo_sorting">Role</th>
+    <th class="company__name">Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @roles.each do |role|%>
+      <tr>
+        <td class="role">
+          <%= role.role_name%>
+        </td>
+        <td class="status"><%= role.role_status%></td>
+      </tr>
+  <%end%>
+  </tbody>
+</table>
